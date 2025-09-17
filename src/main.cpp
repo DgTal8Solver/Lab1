@@ -14,10 +14,13 @@ void getinfo(string name, T& var)
     double min = numeric_limits<T>::min();
     double max = numeric_limits<T>::max();
 
+    string type_name = typeid(var).name();
+    unsigned int size = sizeof(var);
+
     cout << "--------------------" << endl;
     cout << "Variable name: " << name << endl;
-    cout << "Type: " << typeid(var).name() << endl;
-    cout << "Size: " << sizeof(var) << " bytes" << endl;
+    cout << "Type: " << type_name.c_str() << endl;
+    cout << "Size: " << size << " bytes" << endl;
     cout << "Current value: " << var << endl;
     cout << "[Min; Max]: " << "[" << min << "; " << max << "]" << endl;
     cout << "--------------------" << endl;
@@ -35,6 +38,7 @@ void base_task()
     double d_num = 3.14159265358979;
 
     char c = 'C';
+    unsigned char u_c = 'C';
 
     bool condition = false;
 
@@ -50,6 +54,7 @@ void base_task()
     getinfo("d_num", d_num);
 
     getinfo("c", c);
+    getinfo("u_c", u_c);
 
     getinfo("condition", condition);
 
