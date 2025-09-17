@@ -10,7 +10,6 @@ using namespace std;
 
 template<typename T>
 void getinfo(string name, T& var)
-
 {
     double min = numeric_limits<T>::min();
     double max = numeric_limits<T>::max();
