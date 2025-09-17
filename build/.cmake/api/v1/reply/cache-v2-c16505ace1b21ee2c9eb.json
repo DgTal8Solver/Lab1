@@ -1370,6 +1370,42 @@
 			"value" : "FALSE"
 		},
 		{
+			"name" : "lab1_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "E:/Documents/VSCodeProjects/CppScripts/Lab1/build"
+		},
+		{
+			"name" : "lab1_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "lab1_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "E:/Documents/VSCodeProjects/CppScripts/Lab1"
+		},
+		{
 			"name" : "lab_BINARY_DIR",
 			"properties" : 
 			[
