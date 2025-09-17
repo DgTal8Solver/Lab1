@@ -31,7 +31,7 @@ void base_task()
 {
     int i_num = -3;
     short si_num = 32000;
-    long li_num = 864245158;
+    long long li_num = 864245158;
     unsigned int ui_num = 255;
 
     float f_num = 1.5f;
@@ -116,10 +116,8 @@ int main()
 
     printf("\n--------------------\n");
     int x, y;
-    cout << "Enter the first number: ";
-    cin >> x;
-    cout << "Enter the second number: ";
-    cin >> y;
+    cout << "Enter two numbers:" << endl;
+    cin >> x >> y;
     calculations(x, y);
 
     system("pause");
