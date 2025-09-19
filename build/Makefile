@@ -123,41 +123,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named lab
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 main
-.PHONY : main
+lab: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lab
+.PHONY : lab
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+lab/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/build
+.PHONY : lab/fast
 
-src/main.obj: src/main.cpp.obj
-.PHONY : src/main.obj
+src/main2.obj: src/main2.cpp.obj
+.PHONY : src/main2.obj
 
 # target to build an object file
-src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/main.cpp.obj
-.PHONY : src/main.cpp.obj
+src/main2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/src/main2.cpp.obj
+.PHONY : src/main2.cpp.obj
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+src/main2.i: src/main2.cpp.i
+.PHONY : src/main2.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/main2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/src/main2.cpp.i
+.PHONY : src/main2.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+src/main2.s: src/main2.cpp.s
+.PHONY : src/main2.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/main2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab.dir\build.make CMakeFiles/lab.dir/src/main2.cpp.s
+.PHONY : src/main2.cpp.s
 
 # Help Target
 help:
@@ -168,10 +168,10 @@ help:
 	@echo ... codegen
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... main
-	@echo ... src/main.obj
-	@echo ... src/main.i
-	@echo ... src/main.s
+	@echo ... lab
+	@echo ... src/main2.obj
+	@echo ... src/main2.i
+	@echo ... src/main2.s
 .PHONY : help
 
 

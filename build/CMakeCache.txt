@@ -260,15 +260,6 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-lab1_BINARY_DIR:STATIC=E:/Documents/VSCodeProjects/CppScripts/Lab1/build
-
-//Value Computed by CMake
-lab1_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-lab1_SOURCE_DIR:STATIC=E:/Documents/VSCodeProjects/CppScripts/Lab1
-
-//Value Computed by CMake
 lab_BINARY_DIR:STATIC=E:/Documents/VSCodeProjects/CppScripts/Lab1/build
 
 //Value Computed by CMake
